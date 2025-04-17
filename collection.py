@@ -47,7 +47,7 @@ while True:
     # temperature
     temp = t_sensor.readfrom(77, 2)
     temp_c = (256*temp[0] + temp[1])/128
-    temp_f = value * (9/5) + 32.0
+    temp_f = temp_c * (9/5) + 32.0
     print('Temperature: %3.1f C' %temp_c)
     print('Temperature: %3.1f F' %temp_f)
     
